@@ -7,12 +7,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/GhaithAlHallak8/moodler-mcp/releases"><img alt="Release" src="https://img.shields.io/github/v/release/GhaithAlHallak8/moodler-mcp?style=flat-square" /></a>
+  <a href="https://github.com/Dymayo/moodler-mcp/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Dymayo/moodler-mcp?style=flat-square" /></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" /></a>
   <img alt="Python 3.14+" src="https://img.shields.io/badge/python-3.14%2B-blue?style=flat-square" />
 </p>
 
 ---
+
+> **About this fork.** This is [Dymayo/moodler-mcp](https://github.com/Dymayo/moodler-mcp), a fork of [GhaithAlHallak8/moodler-mcp](https://github.com/GhaithAlHallak8/moodler-mcp). It adds sign-in support for Moodle sites whose single sign-on is a button on the login page (such as CAS at Université de Strasbourg) and for sites that issue no private token. These fixes have been proposed upstream; until they land there, download the bundle from [this fork's releases](https://github.com/Dymayo/moodler-mcp/releases).
 
 **moodler-mcp** is an open-source MCP server that plugs your Moodle account into [Claude Desktop](https://claude.ai/download), Claude Code, ChatGPT desktop or any MCP-compatible AI assistant. Once installed, you can stop wrestling with Moodle's UI and just ask questions in natural language.
 
@@ -64,7 +66,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 ### Option 1: One-click bundle (recommended)
 
-1. Grab `moodler-mcp.mcpb` from the [latest release](https://github.com/GhaithAlHallak8/moodler-mcp/releases).
+1. Grab `moodler-mcp.mcpb` from the [latest release](https://github.com/Dymayo/moodler-mcp/releases).
 2. Double-click the file (or drag it into Claude Desktop's extensions view).
 3. When prompted, enter the base URL of your Moodle instance (e.g. `https://mylms.example.edu`, no trailing slash).
 4. Start a new conversation and ask Claude to sign in to Moodle (or just ask a Moodle question; the tool will tell Claude to run `login_to_moodle`). A browser window opens once so you can complete single sign-on.
@@ -74,7 +76,7 @@ That's it. The resulting token is stored locally and stays valid until you revok
 ### Option 2: From source
 
 ```bash
-git clone https://github.com/GhaithAlHallak8/moodler-mcp.git
+git clone https://github.com/Dymayo/moodler-mcp.git
 cd moodler-mcp
 uv sync
 export MOODLE_URL=https://mylms.example.edu

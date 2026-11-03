@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.5](https://github.com/Dymayo/moodler-mcp/compare/v1.1.2...v1.1.5) (2026-11-03)
+
+Fork release from [Dymayo/moodler-mcp](https://github.com/Dymayo/moodler-mcp). Versions 1.1.3 and 1.1.4 were local test builds and were never published.
+
+### Bug Fixes
+
+* accept the web service token when Moodle issues no private token ([ee75b42](https://github.com/Dymayo/moodler-mcp/commit/ee75b42))
+* complete sign-in when single sign-on is a button on the Moodle login page, such as CAS ([4d24db6](https://github.com/Dymayo/moodler-mcp/commit/4d24db6))
+
+### Documentation
+
+* explain SSO button handling and the optional private token ([0b67f2e](https://github.com/Dymayo/moodler-mcp/commit/0b67f2e))
+
 ## [1.1.2](https://github.com/GhaithAlHallak8/moodler-mcp/compare/v1.1.1...v1.1.2) (2026-09-19)
 
 
